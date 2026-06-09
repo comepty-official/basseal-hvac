@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f8fafc;
+color:#0f172a;
+overflow-x:hidden;
+}
+
+/* Header */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:70px;
+background:#fff;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 18px;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.logo{
+font-family:'Poppins',sans-serif;
+font-size:1.2rem;
+font-weight:800;
+color:#0D6EFD;
+}
+
+nav{
+display:none;
+}
+
+.call-btn{
+background:#0D6EFD;
+color:#fff;
+text-decoration:none;
+padding:10px 14px;
+border-radius:10px;
+font-size:.9rem;
+font-weight:600;
+}
+
+/* Sections */
+
+section{
+padding:70px 18px;
+}
+
+/* Hero */
+
+.hero{
+padding-top:100px;
+display:flex;
+flex-direction:column;
+gap:25px;
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+background:#DBEAFE;
+color:#0D6EFD;
+padding:10px 16px;
+border-radius:100px;
+font-size:.85rem;
+font-weight:600;
+margin-bottom:15px;
+}
+
+.hero h1{
+font-family:'Poppins',sans-serif;
+font-size:2.2rem;
+line-height:1.15;
+margin-bottom:15px;
+}
+
+.hero p{
+color:#64748B;
+line-height:1.7;
+font-size:1rem;
+}
+
+.hero-buttons{
+display:flex;
+flex-direction:column;
+gap:12px;
+margin-top:25px;
+}
+
+.btn{
+display:block;
+width:100%;
+padding:15px;
+border-radius:12px;
+text-decoration:none;
+font-weight:700;
+}
+
+.primary{
+background:#0D6EFD;
+color:#fff;
+}
+
+.secondary{
+background:#fff;
+color:#0D6EFD;
+border:2px solid #0D6EFD;
+}
+
+.hero-image img{
+width:100%;
+display:block;
+border-radius:20px;
+margin-top:10px;
+}
+
+/* Headings */
+
+h2{
+font-family:'Poppins',sans-serif;
+font-size:2rem;
+text-align:center;
+margin-bottom:30px;
+}
+
+/* Services */
+
+.service-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:18px;
+}
+
+.card{
+background:#fff;
+padding:24px;
+border-radius:18px;
+box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.card h3{
+margin-bottom:10px;
+font-size:1.1rem;
+}
+
+.card p{
+color:#64748B;
+line-height:1.6;
+}
+
+/* Pricing */
+
+.pricing{
+text-align:center;
+}
+
+.price-card{
+background:#0D6EFD;
+color:#fff;
+padding:30px 20px;
+border-radius:22px;
+max-width:100%;
+}
+
+.price-card span{
+display:block;
+margin-bottom:10px;
+opacity:.9;
+}
+
+.price-card h3{
+font-size:2.7rem;
+line-height:1;
+margin:15px 0 25px;
+word-break:break-word;
+}
+
+.price-card ul{
+list-style:none;
+margin-bottom:25px;
+}
+
+.price-card li{
+padding:8px 0;
+}
+
+.price-card a{
+display:block;
+background:#fff;
+color:#0D6EFD;
+text-decoration:none;
+padding:14px;
+border-radius:12px;
+font-weight:700;
+}
+
+/* About */
+
+.about{
+text-align:center;
+}
+
+.about p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+color:#64748B;
+}
+
+/* Reviews */
+
+.review-slider{
+background:#fff;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.06);
+text-align:center;
+}
+
+.review{
+display:none;
+font-size:1rem;
+line-height:1.8;
+}
+
+.review.active{
+display:block;
+}
+
+/* Contact */
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+color:#64748B;
+}
+
+.contact .btn{
+max-width:300px;
+margin:20px auto 0;
+}
+
+/* Footer */
+
+footer{
+background:#0f172a;
+color:#fff;
+padding:25px;
+text-align:center;
+}
+
+/* Floating Call */
+
+.floating-call{
+position:fixed;
+right:15px;
+bottom:15px;
+width:58px;
+height:58px;
+border-radius:50%;
+background:#0D6EFD;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+font-size:1.3rem;
+box-shadow:0 8px 20px rgba(13,110,253,.35);
+z-index:999;
+}
+
+/* Tablet */
+
+@media(min-width:768px){
+
+header{
+padding:0 40px;
+}
+
+nav{
+display:flex;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#334155;
+font-weight:600;
+}
+
+.hero{
+flex-direction:row;
+align-items:center;
+text-align:left;
+}
+
+.hero-content,
+.hero-image{
+flex:1;
+}
+
+.hero-buttons{
+flex-direction:row;
+}
+
+.btn{
+width:auto;
+}
+
+.service-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.hero h1{
+font-size:3.5rem;
+}
+
+.price-card{
+max-width:500px;
+margin:auto;
+}
+}
+
+/* Desktop */
+
+@media(min-width:1100px){
+
+.hero{
+max-width:1200px;
+margin:auto;
+}
+
+.service-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+.hero h1{
+font-size:4.5rem;
+}
+
+section{
+padding:100px 5%;
+}
+}
+
+
+.hero-image{
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+margin-top:20px;
+}
+
+.hero-image img{
+width:100%;
+display:block;
+border-radius:20px 20px 0 0;
+height:220px;
+object-fit:cover;
+}
+
+/* Turn each image into a card */
+.hero-image img:nth-child(1),
+.hero-image img:nth-child(2){
+background:#fff;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s ease;
+}
+
+.hero-image img:hover{
+transform:translateY(-5px);
+}
+
+/* If you can wrap each image in a div later,
+this is the better card style */
+
+.image-card{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.image-card-content{
+padding:18px;
+}
+
+.image-card-content h3{
+font-size:1.1rem;
+margin-bottom:8px;
+color:#0f172a;
+}
+
+.image-card-content p{
+font-size:.95rem;
+line-height:1.6;
+color:#64748b;
+}
+
+/* Tablet/Desktop */
+
+@media(min-width:768px){
+
+.hero-image{
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+.hero-image img{
+height:280px;
+}
+}
